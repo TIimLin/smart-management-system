@@ -1,0 +1,12 @@
+# 強制 shell scripts 與設定檔使用 LF（在 Windows 上也一樣）
+*.sh        text eol=lf
+*.conf      text eol=lf
+*.yaml      text eol=lf
+*.yml       text eol=lf
+*.json      text eol=lf
+*.py        text eol=lf
+*.js        text eol=lf
+*.ts        text eol=lf
+*.md        text eol=lf
+Dockerfile  text eol=lf
+Makefile    text eol=lf
