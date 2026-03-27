@@ -13,7 +13,8 @@ COMPOSE_CMD := docker compose \
 ## 第一步：打包本地 Docker image（首次或有 Dockerfile/依賴異動時執行）
 dev-build:
 	docker build \
-		--build-arg APPS_JSON_BASE64=$(shell base64 -w 0 apps.json) \
+		--progress=plain \
+		--build-arg APPS_JSON_BASE64=$(shell tr -d '\r' < apps.json | base64 -w 0) \
 		-t $(IMAGE):latest \
 		.
 
