@@ -22,6 +22,7 @@ node_modules/
 # Docker env (含敏感資訊)
 docker/.env
 docker/.env.local
+docker/.env.dev
 .env
 
 # IDE

@@ -1,0 +1,28 @@
+# 開發模式 override
+# 掛載本地程式碼到 container，修改 Python 即時生效（不需 rebuild）
+#
+# 使用方式（從專案根目錄執行）：
+#   make dev-up
+# 或手動：
+#   docker compose -f docker/compose.yaml -f docker/compose.dev.yaml --env-file docker/.env.dev up -d
+
+services:
+  backend:
+    volumes:
+      - sites:/home/frappe/frappe-bench/sites
+      - ..:/home/frappe/frappe-bench/apps/smart-management-system
+
+  queue-short:
+    volumes:
+      - sites:/home/frappe/frappe-bench/sites
+      - ..:/home/frappe/frappe-bench/apps/smart-management-system
+
+  queue-long:
+    volumes:
+      - sites:/home/frappe/frappe-bench/sites
+      - ..:/home/frappe/frappe-bench/apps/smart-management-system
+
+  scheduler:
+    volumes:
+      - sites:/home/frappe/frappe-bench/sites
+      - ..:/home/frappe/frappe-bench/apps/smart-management-system
