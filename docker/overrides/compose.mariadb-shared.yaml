@@ -1,0 +1,10 @@
+# Use external/shared MariaDB override
+# Usage: docker compose -f compose.yaml -f overrides/compose.mariadb-shared.yaml up -d
+services:
+  mariadb:
+    profiles:
+      - disabled
+  configurator:
+    environment:
+      DB_HOST: ${DB_HOST:?Set DB_HOST for external MariaDB}
+      DB_PORT: ${DB_PORT:-3306}
