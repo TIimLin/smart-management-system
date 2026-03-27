@@ -4,6 +4,7 @@ FROM python:${PYTHON_VERSION}-slim-${DEBIAN_BASE} AS base
 
 COPY docker/resources/nginx-template.conf /templates/nginx/frappe.conf.template
 COPY docker/resources/nginx-entrypoint.sh /usr/local/bin/nginx-entrypoint.sh
+COPY docker/resources/security_headers.conf /etc/nginx/snippets/security_headers.conf
 RUN sed -i 's/\r$//' /usr/local/bin/nginx-entrypoint.sh
 
 ARG WKHTMLTOPDF_VERSION=0.12.6.1-3
