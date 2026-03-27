@@ -4,6 +4,10 @@
     "branch": "version-16"
   },
   {
+    "url": "https://github.com/frappe/hrms",
+    "branch": "version-16"
+  },
+  {
     "url": "https://github.com/TIimLin/smart-management-system",
     "branch": "main"
   }
