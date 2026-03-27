@@ -1,9 +1,40 @@
-.DS_Store
-*.pyc
-*.egg-info
-*.swp
-tags
-healthcare/docs/current
+# Python
 __pycache__/
+*.py[cod]
+*.egg-info/
 dist/
+build/
+*.egg
+.eggs/
+.venv/
+venv/
+env/
+
+# Frappe
+*.pyc
+*.pyo
+.DS_Store
+*.swp
 node_modules/
+.cache/
+.yarn/
+
+# Docker env (含敏感資訊)
+docker/.env
+docker/.env.local
+.env
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Local files
+*.log
+*.tmp
+sites/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
