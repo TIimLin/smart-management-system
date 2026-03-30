@@ -50,6 +50,8 @@ import-translations:
 	$(COMPOSE_CMD) exec backend bench --site $(SITE) import-translations zh-TW /home/frappe/frappe-bench/apps/hrms/hrms/locale/zh_TW.po
 	$(COMPOSE_CMD) exec backend bench --site $(SITE) import-translations zh-TW /home/frappe/frappe-bench/apps/healthcare/healthcare/locale/zh_TW.po
 	$(COMPOSE_CMD) exec backend bench compile-po-to-mo --app healthcare --locale zh_TW
+	$(COMPOSE_CMD) exec backend bench --site $(SITE) execute frappe.db.set_value --args '["Language","zh-TW","enabled",1]'
+	$(COMPOSE_CMD) exec backend bench --site $(SITE) clear-cache
 
 ## 修改 Python 程式碼後重啟 backend（讓變更生效）
 restart-backend:
