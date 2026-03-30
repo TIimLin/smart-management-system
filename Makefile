@@ -34,10 +34,11 @@ create-site:
 		--admin-password $(ADMIN_PW) \
 		--no-mariadb-socket
 
-## 第四步：安裝 healthcare 與 hrms 模組
+## 第四步：安裝模組（依序安裝 erpnext → hrms → healthcare）
 install-apps:
-	$(COMPOSE_CMD) exec backend bench --site $(SITE) install-app healthcare
+	$(COMPOSE_CMD) exec backend bench --site $(SITE) install-app erpnext
 	$(COMPOSE_CMD) exec backend bench --site $(SITE) install-app hrms
+	$(COMPOSE_CMD) exec backend bench --site $(SITE) install-app healthcare
 
 ## 修改 Python 程式碼後重啟 backend（讓變更生效）
 restart-backend:
