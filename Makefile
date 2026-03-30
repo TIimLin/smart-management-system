@@ -8,7 +8,7 @@ COMPOSE_CMD := docker compose \
 	-f docker/compose.dev.yaml \
 	--env-file docker/.env.dev
 
-.PHONY: dev-build dev-up dev-down create-site install-apps logs restart-backend
+.PHONY: dev-build dev-up dev-down create-site install-apps import-translations logs restart-backend
 
 ## 第一步：打包本地 Docker image（首次或有 Dockerfile/依賴異動時執行）
 dev-build:
@@ -34,11 +34,19 @@ create-site:
 		--admin-password $(ADMIN_PW) \
 		--no-mariadb-socket
 
-## 第四步：安裝模組（依序安裝 erpnext → hrms → healthcare）
+## 第四步：安裝模組（依序安裝 erpnext → hrms → healthcare）並匯入繁體中文翻譯
 install-apps:
 	$(COMPOSE_CMD) exec backend bench --site $(SITE) install-app erpnext
 	$(COMPOSE_CMD) exec backend bench --site $(SITE) install-app hrms
 	$(COMPOSE_CMD) exec backend bench --site $(SITE) install-app healthcare
+	$(MAKE) import-translations
+
+## 匯入 zh-TW 繁體中文翻譯（可單獨執行以更新翻譯）
+import-translations:
+	$(COMPOSE_CMD) exec backend bench --site $(SITE) import-translations zh-TW /home/frappe/frappe-bench/apps/frappe/frappe/locale/zh_TW.po
+	$(COMPOSE_CMD) exec backend bench --site $(SITE) import-translations zh-TW /home/frappe/frappe-bench/apps/erpnext/erpnext/locale/zh_TW.po
+	$(COMPOSE_CMD) exec backend bench --site $(SITE) import-translations zh-TW /home/frappe/frappe-bench/apps/hrms/hrms/locale/zh_TW.po
+	$(COMPOSE_CMD) exec backend bench --site $(SITE) import-translations zh-TW /home/frappe/frappe-bench/apps/healthcare/healthcare/locale/zh_TW.po
 
 ## 修改 Python 程式碼後重啟 backend（讓變更生效）
 restart-backend:
