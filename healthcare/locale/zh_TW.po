@@ -6320,7 +6320,7 @@ msgstr "連結現有專案"
 
 #: healthcare/healthcare/doctype/healthcare_practitioner/healthcare_practitioner.js:307
 msgid "Link the Google Calendar created and Authorized by the practitioner, all tele consultation appointments will be scheduled using this calendar"
-msgstr ""
+msgstr "連結由醫師建立並授權的 Google 日曆，所有遠距諮詢預約將使用此日曆進行排程"
 
 #. Label of the item_details (Section Break) field in DocType 'Medication'
 #: healthcare/healthcare/doctype/medication/medication.json
@@ -6403,7 +6403,7 @@ msgstr "手動"
 
 #: healthcare/healthcare/doctype/patient_insurance_coverage/patient_insurance_coverage.py:47
 msgid "Manual approval required for Insurance Coverage {}"
-msgstr ""
+msgstr "保險給付 {} 需要手動審核"
 
 #. Label of the manufacturer (Link) field in DocType 'Medication Linked Item'
 #: healthcare/healthcare/doctype/medication_linked_item/medication_linked_item.json
@@ -6493,11 +6493,11 @@ msgstr "已超過最大數量"
 
 #: healthcare/healthcare/doctype/practitioner_schedule/practitioner_schedule.py:23
 msgid "Maximum appointments cannot be more than {0} in row #{1}"
-msgstr ""
+msgstr "第 #{1} 列的最大預約數量不能超過 {0}"
 
 #: healthcare/healthcare/doctype/medication_request/medication_request.py:68
 msgid "Maximum billable quantity exceeded by {0}"
-msgstr ""
+msgstr "超出最大可計費數量 {0}"
 
 #. Label of the medical_codes_tab (Tab Break) field in DocType 'Appointment
 #. Type'
@@ -6844,7 +6844,7 @@ msgstr "缺少必填欄位"
 
 #: healthcare/healthcare/doctype/inpatient_record/inpatient_record.py:344
 msgid "Missing required details, did not create Inpatient Record"
-msgstr ""
+msgstr "缺少必要資料，未建立住院記錄"
 
 #. Label of the mobile_phone (Data) field in DocType 'Healthcare Practitioner'
 #. Label of the mobile (Data) field in DocType 'Inpatient Record'
@@ -6914,7 +6914,7 @@ msgstr "星期一"
 #. Label of the monday (Check) field in DocType 'Practitioner Availability'
 #: healthcare/healthcare/doctype/practitioner_availability/practitioner_availability.json
 msgid "Monday "
-msgstr ""
+msgstr "星期一 "
 
 #. Option for the 'Period' (Select) field in DocType 'Prescription Duration'
 #: healthcare/healthcare/doctype/prescription_duration/prescription_duration.json
@@ -7023,7 +7023,7 @@ msgstr "命名序列"
 #. 'Healthcare Settings'
 #: healthcare/healthcare/doctype/healthcare_settings/healthcare_settings.json
 msgid "Naming Series for Insurance Coverage Journal Entry"
-msgstr ""
+msgstr "保險給付日記帳分錄的命名系列"
 
 #. Label of the national_drug_code (Data) field in DocType 'Medication'
 #: healthcare/healthcare/doctype/medication/medication.json
@@ -7068,7 +7068,7 @@ msgstr "新服務單位名稱"
 #. DocType 'Healthcare Settings'
 #: healthcare/healthcare/doctype/healthcare_settings/healthcare_settings.json
 msgid "Nightly generate billable from Inpatient Occupancy"
-msgstr ""
+msgstr "每晚從住院佔用自動產生計費專案"
 
 #. Option for the 'Normal Value' (Select) field in DocType 'Observation
 #. Reference Range'
@@ -7097,11 +7097,11 @@ msgstr "無藥品短缺"
 
 #: healthcare/healthcare/doctype/inpatient_medication_order/inpatient_medication_order.py:31
 msgid "No Inpatient Record found against patient {0}"
-msgstr ""
+msgstr "找不到病患 {0} 的住院記錄"
 
 #: healthcare/healthcare/doctype/insurance_claim/insurance_claim.py:410
 msgid "No Insurance Claim Coverages in Approved status to create Payment Entry"
-msgstr ""
+msgstr "沒有已核准狀態的保險理賠給付可建立付款分錄"
 
 #: healthcare/healthcare/doctype/lab_test/lab_test_list.js:70
 msgid "No Lab Tests created"
@@ -7141,11 +7141,11 @@ msgstr "未到診"
 
 #: healthcare/healthcare/doctype/patient_insurance_coverage/patient_insurance_coverage.py:299
 msgid "No active Insurance Contract for Company {0} with Insurance Payor {1}"
-msgstr ""
+msgstr "公司 {0} 與保險給付方 {1} 沒有有效的保險合約"
 
 #: healthcare/healthcare/doctype/insurance_claim/insurance_claim.py:265
 msgid "No matching Patient Insurance Coverages found, please check the filters"
-msgstr ""
+msgstr "找不到符合條件的病患保險給付，請檢查篩選條件"
 
 #: healthcare/healthcare/page/patient_history/patient_history.js:159
 #: healthcare/healthcare/page/patient_history/patient_history.js:251
@@ -7164,7 +7164,7 @@ msgstr "療程次數"
 
 #: healthcare/healthcare/doctype/inpatient_medication_entry/inpatient_medication_entry.py:30
 msgid "No pending medication orders found for selected criteria"
-msgstr ""
+msgstr "找不到符合所選條件的待處理藥物醫囑"
 
 #: healthcare/healthcare/doctype/patient_appointment/patient_appointment.js:1130
 msgid "No slots available for booking"
@@ -7173,7 +7173,7 @@ msgstr "無可預約的時段"
 #: healthcare/healthcare/doctype/insurance_payor_eligibility_plan/insurance_payor_eligibility_plan.js:32
 #: healthcare/healthcare/doctype/patient_insurance_policy/patient_insurance_policy.js:40
 msgid "No valid contract found with the Insurance Payor {0}"
-msgstr ""
+msgstr "找不到與保險給付方 {0} 的有效合約"
 
 #. Label of the num_print (Int) field in DocType 'Sample Collection'
 #: healthcare/healthcare/doctype/sample_collection/sample_collection.json
@@ -7182,11 +7182,11 @@ msgstr "列印份數"
 
 #: healthcare/healthcare/doctype/observation/observation.py:116
 msgid "Non numeric result {0} is not allowed for Permitted Data Type {1}"
-msgstr ""
+msgstr "允許資料型別 {1} 不接受非數值結果 {0}"
 
 #: healthcare/healthcare/doctype/observation/observation.py:388
 msgid "Non numeric result {0} is not allowed for Permitted Type {1}"
-msgstr ""
+msgstr "允許型別 {1} 不接受非數值結果 {0}"
 
 #. Label of the section_break_ml0p (Section Break) field in DocType
 #. 'Observation Reference Range'
@@ -7281,12 +7281,12 @@ msgstr "正常值"
 #. Description of the 'Respiratory rate' (Data) field in DocType 'Vital Signs'
 #: healthcare/healthcare/doctype/vital_signs/vital_signs.json
 msgid "Normal reference range for an adult is 16–20 breaths/minute (RCP 2012)"
-msgstr ""
+msgstr "成人正常參考範圍為每分鐘 16-20 次呼吸（RCP 2012）"
 
 #. Description of the 'Blood Pressure' (Data) field in DocType 'Vital Signs'
 #: healthcare/healthcare/doctype/vital_signs/vital_signs.json
 msgid "Normal resting blood pressure in an adult is approximately 120 mmHg systolic, and 80 mmHg diastolic, abbreviated \"120/80 mmHg\""
-msgstr ""
+msgstr "成人正常靜息血壓約為收縮壓 120 mmHg，舒張壓 80 mmHg，簡寫為 "120/80 mmHg""
 
 #: healthcare/healthcare/doctype/insurance_payor_contract/insurance_payor_contract_list.js:7
 #: healthcare/healthcare/doctype/insurance_payor_eligibility_plan/insurance_payor_eligibility_plan_list.js:7
@@ -7311,15 +7311,15 @@ msgstr "不允許"
 
 #: healthcare/healthcare/doctype/nursing_task/nursing_task.py:36
 msgid "Not Allowed to 'Complete' Nursing Task without linking Task Document"
-msgstr ""
+msgstr "未連結任務檔案時，不允許將護理任務標記為「完成」"
 
 #: healthcare/healthcare/doctype/nursing_task/nursing_task.py:30
 msgid "Not Allowed to cancel Nursing Task with status 'Completed'"
-msgstr ""
+msgstr "不允許取消狀態為「已完成」的護理任務"
 
 #: healthcare/healthcare/doctype/insurance_claim/insurance_claim.js:252
 msgid "Not Allowed to delete coverage after submission, please update the Coverage status instead"
-msgstr ""
+msgstr "提交後不允許刪除給付專案，請改為更新給付狀態"
 
 #: healthcare/healthcare/doctype/patient_appointment/patient_appointment.js:733
 #: healthcare/healthcare/doctype/patient_appointment/patient_appointment.py:749
@@ -7340,11 +7340,11 @@ msgstr "不允許列印此檔案。"
 
 #: healthcare/healthcare/doctype/patient_appointment/patient_appointment.py:227
 msgid "Not allowed, cannot overlap appointment {}"
-msgstr ""
+msgstr "不允許，預約 {} 不可重疊"
 
 #: healthcare/healthcare/doctype/patient_appointment/patient_appointment.py:213
 msgid "Not allowed, {} cannot exceed maximum capacity {}"
-msgstr ""
+msgstr "不允許，{} 不可超過最大容量 {}"
 
 #: healthcare/www/patient-portal/index.py:24
 msgid "Not permitted"
@@ -7353,15 +7353,15 @@ msgstr "無許可權"
 #: healthcare/healthcare/doctype/lab_test/lab_test.js:162
 #: healthcare/healthcare/doctype/lab_test/lab_test.js:169
 msgid "Not permitted, configure Lab Test Template as required"
-msgstr ""
+msgstr "不允許，請依需求設定檢驗模板"
 
 #: healthcare/healthcare/doctype/lab_test_template/lab_test_template.py:59
 msgid "Not permitted. Please disable the Lab Test Template"
-msgstr ""
+msgstr "不允許。請停用該檢驗模板"
 
 #: healthcare/healthcare/doctype/healthcare_service_unit_type/healthcare_service_unit_type.py:51
 msgid "Not permitted. Please disable the Service Unit Type"
-msgstr ""
+msgstr "不允許。請停用該服務單位型別"
 
 #. Label of the note (Text Editor) field in DocType 'Clinical Note'
 #. Label of the note_section (Section Break) field in DocType 'Clinical Note'
@@ -7417,7 +7417,7 @@ msgstr "允許重複次數"
 #: healthcare/healthcare/doctype/healthcare_practitioner/healthcare_practitioner.json
 #: healthcare/healthcare/doctype/healthcare_settings/healthcare_settings.json
 msgid "Number of Patient Encounters in Valid Days"
-msgstr ""
+msgstr "有效天數內的病患就診次數"
 
 #: healthcare/healthcare/doctype/healthcare_service_unit/healthcare_service_unit_tree.js:179
 msgid "Number of Service Units"
@@ -7425,13 +7425,13 @@ msgstr "服務單位數量"
 
 #: healthcare/healthcare/doctype/healthcare_service_unit/healthcare_service_unit.py:97
 msgid "Number of Service Units to be created should at least be 1"
-msgstr ""
+msgstr "要建立的服務單位數量至少為 1"
 
 #. Description of the 'No. of prints' (Int) field in DocType 'Sample
 #. Collection'
 #: healthcare/healthcare/doctype/sample_collection/sample_collection.json
 msgid "Number of prints required for labelling the samples"
-msgstr ""
+msgstr "標記樣本所需的列印數量"
 
 #. Option for the 'Permitted Data Type' (Select) field in DocType 'Observation'
 #. Option for the 'Permitted Data Type' (Select) field in DocType 'Observation
@@ -7485,7 +7485,7 @@ msgstr "護理任務"
 
 #: healthcare/healthcare/doctype/nursing_task/nursing_task.py:39
 msgid "Nursing Task cannot be 'Draft' after submission"
-msgstr ""
+msgstr "護理任務提交後不能為「草稿」狀態"
 
 #: healthcare/healthcare/doctype/patient_encounter/patient_encounter.js:194
 msgid "Nursing Tasks"
@@ -7570,7 +7570,7 @@ msgstr "門診診察費"
 
 #: healthcare/regional/india/abdm/js/patient.js:225
 msgid "OTP Generation Failed, Please try again later"
-msgstr ""
+msgstr "OTP 產生失敗，請稍後再試"
 
 #: healthcare/healthcare/doctype/vital_signs/vital_signs.js:43
 msgid "Obese"
@@ -7668,7 +7668,7 @@ msgstr "觀察範本"
 
 #: healthcare/healthcare/doctype/observation_template/observation_template.py:53
 msgid "Observation Template '{0}' cannot be added as a component of itself."
-msgstr ""
+msgstr "觀察模板「{0}」不能新增為自身的組成專案。"
 
 #. Label of the observation_idx (Int) field in DocType 'Observation'
 #: healthcare/healthcare/doctype/observation/observation.json
@@ -7690,27 +7690,27 @@ msgstr "觀察紀錄"
 
 #: healthcare/setup.py:1401
 msgid "Observations generated by imaging. The scope includes observations regarding plain x-ray, ultrasound, CT, MRI, angiography, echocardiography, and nuclear medicine."
-msgstr ""
+msgstr "由影像學檢查產生的觀察結果。範圍包括普通 X 光、超音波、CT、MRI、血管攝影、心臟超音波及核子醫學相關的觀察結果。"
 
 #: healthcare/setup.py:1451
 msgid "Observations generated by non-interventional treatment protocols (e.g. occupational, physical, radiation, nutritional and medication therapy)"
-msgstr ""
+msgstr "由非介入性治療方案產生的觀察結果（例如：職能治療、物理治療、放射治療、營養治療及藥物治療）"
 
 #: healthcare/setup.py:1421
 msgid "Observations generated by other procedures. This category includes observations resulting from interventional and non-interventional procedures excluding laboratory and imaging (e.g., cardiology catheterization, endoscopy, electrodiagnostics, etc.). Procedure results are typically generated by a clinician to provide more granular information about component observations made during a procedure. An example would be when a gastroenterologist reports the size of a polyp observed during a colonoscopy."
-msgstr ""
+msgstr "由其他處置產生的觀察結果。此類別包括實驗室和影像學以外的介入性和非介入性處置所產生的觀察結果（例如：心導管檢查、內視鏡、電生理診斷等）。處置結果通常由臨床醫師產生，以提供處置過程中觀察到的組成專案之更詳細資訊。例如，胃腸科醫師報告在大腸鏡檢查中觀察到的息肉大小。"
 
 #: healthcare/setup.py:1441
 msgid "Observations generated by physical exam findings including direct observations made by a clinician and use of simple instruments and the result of simple maneuvers performed directly on the patient's body."
-msgstr ""
+msgstr "由理學檢查發現產生的觀察結果，包括臨床醫師的直接觀察、使用簡單儀器以及直接在病患身體上進行的簡單操作結果。"
 
 #: healthcare/setup.py:1461
 msgid "Observations that measure or record any bodily activity that enhances or maintains physical fitness and overall health and wellness. Not under direct supervision of practitioner such as a physical therapist. (e.g., laps swum, steps, sleep data)"
-msgstr ""
+msgstr "測量或記錄任何增進或維持體適能及整體健康的身體活動之觀察結果。非在物理治療師等醫師的直接監督下進行。（例如：游泳圈數、步數、睡眠資料）"
 
 #: healthcare/setup.py:1477
 msgid "Observations that measure or record any bodily activity that enhances or maintains physical fitness and overall health and wellness. Not under direct supervision of practitioner such as a physical therapist. (e.g., laps swum, steps, sleep data.)"
-msgstr ""
+msgstr "測量或記錄任何增進或維持體適能及整體健康的身體活動之觀察結果。非在物理治療師等醫師的直接監督下進行。（例如：游泳圈數、步數、睡眠資料。）"
 
 #. Label of the occupancy_status (Select) field in DocType 'Healthcare Service
 #. Unit'
@@ -7731,7 +7731,7 @@ msgstr "職業"
 #: healthcare/healthcare/doctype/patient/patient.json
 #: healthcare/healthcare/web_form/patient_registration/patient_registration.json
 msgid "Occupational Hazards and Environmental Factors"
-msgstr ""
+msgstr "職業危害與環境因素"
 
 #: healthcare/healthcare/page/patient_history/patient_history.js:343
 msgid "Occupational hazards"
@@ -7788,12 +7788,12 @@ msgstr "單側"
 
 #: healthcare/healthcare/doctype/patient_insurance_coverage/patient_insurance_coverage.py:88
 msgid "Only Insurance Coverages in Status <b>Approved</b> or <b>Rejected</b> can be submitted"
-msgstr ""
+msgstr "只有狀態為<b>已核准</b>或<b>已駁回</b>的保險給付才能提交"
 
 #. Description of the 'Canonical Mapping' (Link) field in DocType 'Code Value'
 #: healthcare/healthcare/doctype/code_value/code_value.json
 msgid "Only applicable to status codes, all status codes are mapped to one of the codes defined as part of Resource Status (The master set of status codes used throughout FHIR)"
-msgstr ""
+msgstr "僅適用於狀態碼，所有狀態碼都對應到資源狀態中定義的其中一個程式碼（FHIR 中使用的主狀態碼集）"
 
 #. Option for the 'Status' (Select) field in DocType 'Diagnostic Report'
 #. Option for the 'Status' (Select) field in DocType 'Observation Sample
@@ -7840,13 +7840,13 @@ msgstr "選項"
 #: healthcare/healthcare/doctype/healthcare_service_unit/healthcare_service_unit_tree.js:103
 #: healthcare/healthcare/doctype/healthcare_service_unit/healthcare_service_unit_tree.js:260
 msgid "Optional, if you want to manage stock separately for this Service Unit"
-msgstr ""
+msgstr "選填，如果您想為此服務單位單獨管理庫存"
 
 #. Description of the 'Insurance Payor Eligibility Plan' (Link) field in
 #. DocType 'Item Insurance Eligibility'
 #: healthcare/healthcare/doctype/item_insurance_eligibility/item_insurance_eligibility.json
 msgid "Optional, set this <i>only</i> if you want to restrict this coverage to Patients subscribed to an Insurance Plan (Insurance Policy for the Patient should have the Coverage Plan selected)."
-msgstr ""
+msgstr "選填，僅在您想要將此給付限定於已訂閱保險方案的病患時設定（病患的保險保單應已選擇給付方案）。"
 
 #. Label of the options (Select) field in DocType 'Observation Reference Range'
 #. Label of the options (Small Text) field in DocType 'Observation Template'
@@ -7983,7 +7983,7 @@ msgstr "醫囑範本型別"
 
 #: healthcare/healthcare/doctype/service_request/service_request.py:81
 msgid "Order Template Type and Order Template are mandatory to create Service Request"
-msgstr ""
+msgstr "建立服務請求時，醫囑模板型別和醫囑模板為必填"
 
 #. Label of the order_time (Time) field in DocType 'Medication Request'
 #. Label of the order_time (Time) field in DocType 'Service Request'
@@ -8041,7 +8041,7 @@ msgstr "醫囑"
 
 #: healthcare/healthcare/doctype/inpatient_record/inpatient_record.py:887
 msgid "Orders Created from Treatment Counselling"
-msgstr ""
+msgstr "從治療諮詢建立的醫囑"
 
 #. Label of the orders_html (HTML) field in DocType 'Discharge Summary'
 #: healthcare/healthcare/doctype/discharge_summary/discharge_summary.json
@@ -8153,7 +8153,7 @@ msgstr "門診"
 
 #: healthcare/healthcare/doctype/healthcare_practitioner/healthcare_practitioner.py:52
 msgid "Outpatient Consulting Charge is mandatory if you are setting Outpatient Consulting Charge Item"
-msgstr ""
+msgstr "如果設定了門診諮詢費用物料，則門診諮詢費用為必填"
 
 #. Label of the sb_op_settings (Section Break) field in DocType 'Healthcare
 #. Settings'
@@ -8201,7 +8201,7 @@ msgstr "與另一個不可用時段重疊："
 #. Eligibility Plan'
 #: healthcare/healthcare/doctype/insurance_payor_eligibility_plan/insurance_payor_eligibility_plan.json
 msgid "Overrides the Default Price List in Insurance Payor Contract"
-msgstr ""
+msgstr "覆蓋保險給付方合約中的預設價格表"
 
 #: healthcare/healthcare/doctype/vital_signs/vital_signs.js:41
 msgid "Overweight"
@@ -8395,11 +8395,11 @@ msgstr "病患"
 
 #: healthcare/public/js/sales_invoice.js:91
 msgid "Patient <b>{0}</b> is not linked to a Customer"
-msgstr ""
+msgstr "病患 <b>{0}</b> 未連結至客戶"
 
 #: healthcare/healthcare/utils.py:57
 msgid "Patient <b>{0}</b> is not linked to a Customer <b><a href='/app/Form/Patient/{1}'>{1}</a></b>"
-msgstr ""
+msgstr "病患 <b>{0}</b> 未連結至客戶 <b><a href='/app/Form/Patient/{1}'>{1}</a></b>"
 
 #. Label of the patient_age (Data) field in DocType 'Inpatient Medication
 #. Order'
@@ -8440,7 +8440,7 @@ msgstr "病患結束年齡不能小於 0"
 
 #: healthcare/healthcare/doctype/treatment_plan_template/treatment_plan_template.py:19
 msgid "Patient Age To cannot be less than Patient Age From"
-msgstr ""
+msgstr "病患年齡（至）不能小於病患年齡（從）"
 
 #. Label of the patient_appointment (Link) field in DocType 'Fee Validity'
 #. Label of the appointment (Link) field in DocType 'Fee Validity Reference'
@@ -8559,11 +8559,11 @@ msgstr "病患同意書範本"
 #. Settings'
 #: healthcare/healthcare/doctype/abdm_settings/abdm_settings.json
 msgid "Patient Consent To Use Aadhaar For ABHA Creation"
-msgstr ""
+msgstr "病患同意使用 Aadhaar 建立 ABHA"
 
 #: healthcare/regional/india/abdm/js/patient.js:410
 msgid "Patient Consent is required for ABHA creation"
-msgstr ""
+msgstr "建立 ABHA 需要病患同意"
 
 #. Label of the basic_info (Section Break) field in DocType 'Patient'
 #. Label of a field in the patient-registration Web Form
@@ -8715,11 +8715,11 @@ msgstr "病患保險保單"
 
 #: healthcare/healthcare/doctype/patient_insurance_coverage/patient_insurance_coverage.py:55
 msgid "Patient Insurance Policy is required to create Insurance Coverage"
-msgstr ""
+msgstr "建立保險給付需要病患保險保單"
 
 #: healthcare/healthcare/doctype/patient_insurance_coverage/patient_insurance_coverage.py:63
 msgid "Patient Insurance Policy {} is not valid as on {}"
-msgstr ""
+msgstr "病患保險保單 {} 在 {} 時無效"
 
 #. Name of a DocType
 #. Label of a Link in the Healthcare Workspace
@@ -8730,7 +8730,7 @@ msgstr "病患病歷"
 
 #: healthcare/healthcare/doctype/patient_history_settings/patient_history_settings.py:27
 msgid "Patient Medical Record can only be created for submittable document types."
-msgstr ""
+msgstr "病患醫療記錄只能為可提交的檔案型別建立。"
 
 #. Label of the patient_name (Data) field in DocType 'Clinical Procedure'
 #. Label of the patient_name (Data) field in DocType 'Diagnostic Report'
@@ -8852,11 +8852,11 @@ msgstr "病患已存在"
 
 #: healthcare/healthcare/doctype/patient_appointment/patient_appointment.py:159
 msgid "Patient already has an appointment booked for the same day!"
-msgstr ""
+msgstr "病患在同一天已有預約！"
 
 #: healthcare/healthcare/doctype/patient_appointment/patient_appointment.py:264
 msgid "Patient already has an appointment {} booked for {} on {}"
-msgstr ""
+msgstr "病患已有預約 {} 在 {} 於 {} 預訂"
 
 #. Label of the patient_and_policy_details_section (Section Break) field in
 #. DocType 'Insurance Claim'
@@ -8878,24 +8878,24 @@ msgstr "找不到病患"
 
 #: healthcare/healthcare/doctype/patient_encounter/patient_encounter.js:944
 msgid "Patient referral requests created successfully"
-msgstr ""
+msgstr "病患轉介請求已成功建立"
 
 #: healthcare/healthcare/doctype/patient_insurance_policy/patient_insurance_policy.py:56
 msgid "Patient {0} already has an Insurance Policy {1} with the same Policy Number {2}"
-msgstr ""
+msgstr "病患 {0} 已有相同保單號碼 {2} 的保險保單 {1}"
 
 #: healthcare/healthcare/doctype/patient_insurance_policy/patient_insurance_policy.py:39
 msgid "Patient {0} already has an active insurance policy {1} with the coverage plan {2} for this period"
-msgstr ""
+msgstr "病患 {0} 在此期間已有有效的保險保單 {1}，給付方案為 {2}"
 
 #: healthcare/healthcare/doctype/patient_appointment/patient_appointment.py:286
 msgid "Patient {0} is not admitted in the service unit {1}"
-msgstr ""
+msgstr "病患 {0} 未入住服務單位 {1}"
 
 #. Subtitle of the Module Onboarding 'Healthcare'
 #: healthcare/healthcare/module_onboarding/healthcare/healthcare.json
 msgid "Patients, Practitioner Schedules, Settings, and more."
-msgstr ""
+msgstr "病患、醫師排班、設定等更多功能。"
 
 #. Label of the payment_account (Read Only) field in DocType 'Insurance Claim'
 #: healthcare/healthcare/doctype/insurance_claim/insurance_claim.json
@@ -8920,7 +8920,7 @@ msgstr "付款分錄"
 
 #: healthcare/healthcare/doctype/insurance_claim/insurance_claim.py:412
 msgid "Payment Entry against Insurance Coverages {} via Insurance Claim {}"
-msgstr ""
+msgstr "透過保險理賠 {} 對保險給付 {} 的付款分錄"
 
 #. Label of the payment_gateway (Data) field in DocType 'Healthcare Settings'
 #: healthcare/healthcare/doctype/healthcare_settings/healthcare_settings.json
@@ -9031,7 +9031,7 @@ msgstr "待處理療程計畫"
 #. Request'
 #: healthcare/healthcare/doctype/service_request/service_request.json
 msgid "Perform the service only if there is a need. For example \"pain\", \"on flare-up\", etc."
-msgstr ""
+msgstr "僅在有需要時執行此服務。例如 "疼痛"、"發作時" 等。"
 
 #. Label of the period (Link) field in DocType 'Drug Prescription'
 #. Label of the period (Link) field in DocType 'Medication Request'
@@ -9196,15 +9196,15 @@ msgstr "預計與實際療程比較"
 
 #: healthcare/healthcare/utils.py:425
 msgid "Please Configure Clinical Procedure Consumable Item in {0}"
-msgstr ""
+msgstr "請在 {0} 中設定臨床處置耗材物料"
 
 #: healthcare/healthcare/utils.py:1550
 msgid "Please complete linked Nursing Tasks before submission: {}"
-msgstr ""
+msgstr "提交前請完成已連結的護理任務：{}"
 
 #: healthcare/healthcare/doctype/inpatient_medication_entry/inpatient_medication_entry.py:148
 msgid "Please enable Allow Negative Stock in Stock Settings or create Stock Entry to proceed."
-msgstr ""
+msgstr "請在庫存設定中啟用「允許負庫存」或建立庫存異動以繼續。"
 
 #: healthcare/healthcare/doctype/diagnostic_report/diagnostic_report.js:107
 #: healthcare/healthcare/doctype/sample_collection/sample_collection.js:403
@@ -9213,11 +9213,11 @@ msgstr "請啟用彈出視窗"
 
 #: healthcare/healthcare/doctype/clinical_procedure/clinical_procedure.js:9
 msgid "Please enter Item Code to get Batch Number"
-msgstr ""
+msgstr "請輸入物料編碼以取得批號"
 
 #: healthcare/healthcare/doctype/observation/observation.py:492
 msgid "Please enter result for all components to Approve."
-msgstr ""
+msgstr "請輸入所有組成專案的結果以進行核准。"
 
 #: healthcare/healthcare/doctype/observation/observation.py:489
 msgid "Please enter result to Approve."
@@ -9229,7 +9229,7 @@ msgstr "請輸入 {}"
 
 #: healthcare/healthcare/doctype/insurance_claim/insurance_claim.js:133
 msgid "Please first select the rows you want to update"
-msgstr ""
+msgstr "請先選擇您要更新的列"
 
 #: healthcare/healthcare/doctype/patient/patient.js:115
 #: healthcare/healthcare/doctype/patient/patient.js:125
@@ -9258,7 +9258,7 @@ msgstr "請選擇病患以取得檢驗專案"
 
 #: healthcare/healthcare/doctype/clinical_procedure/clinical_procedure.js:505
 msgid "Please select Patient to get prescribed procedure"
-msgstr ""
+msgstr "請選擇病患以取得處方處置"
 
 #: healthcare/healthcare/doctype/medication/medication.py:152
 msgid "Please select a Medication"
@@ -9266,7 +9266,7 @@ msgstr "請選擇藥物"
 
 #: healthcare/healthcare/doctype/inpatient_medication_order/inpatient_medication_order.js:94
 msgid "Please select a Patient Encounter to get from"
-msgstr ""
+msgstr "請選擇要取得資料的病患就診記錄"
 
 #: healthcare/public/js/sales_invoice.js:9
 #: healthcare/public/js/sales_invoice.js:45
@@ -9303,15 +9303,15 @@ msgstr "請在病患 {0} 中設定客戶"
 
 #: healthcare/healthcare/doctype/patient_appointment/patient_appointment.py:360
 msgid "Please set a Customer linked to the Patient"
-msgstr ""
+msgstr "請設定與病患連結的客戶"
 
 #: healthcare/healthcare/doctype/healthcare_service_unit/healthcare_service_unit.py:67
 msgid "Please set a valid Service Unit Capacity to enable Overlapping Appointments"
-msgstr ""
+msgstr "請設定有效的服務單位容量以啟用重疊預約"
 
 #: healthcare/healthcare/doctype/patient/patient.py:93
 msgid "Please set defaults for Customer Group, Territory and Selling Price List in Selling Settings"
-msgstr ""
+msgstr "請在銷售設定中設定客戶群組、區域和銷售價格表的預設值"
 
 #: healthcare/healthcare/doctype/patient_appointment/patient_appointment.js:1300
 msgid "Please set the Paid Amount first"
@@ -9431,11 +9431,11 @@ msgstr "醫師可預約時間"
 
 #: healthcare/healthcare/doctype/practitioner_availability/practitioner_availability.py:50
 msgid "Practitioner Availability End time must be after Start time."
-msgstr ""
+msgstr "醫師可用時段的結束時間必須在開始時間之後。"
 
 #: healthcare/healthcare/doctype/practitioner_availability/practitioner_availability.py:45
 msgid "Practitioner Availability Start and End times are required."
-msgstr ""
+msgstr "醫師可用時段的開始和結束時間為必填。"
 
 #: healthcare/healthcare/doctype/patient_appointment/patient_appointment.js:1015
 msgid "Practitioner Availability:"
@@ -9517,11 +9517,11 @@ msgstr "醫療人員型別"
 
 #: healthcare/healthcare/doctype/patient_appointment/patient_appointment.py:1013
 msgid "Practitioner {0} does not have a Practitioner Schedule assigned."
-msgstr ""
+msgstr "醫師 {0} 未指派醫師排班。"
 
 #: healthcare/healthcare/doctype/patient_appointment/patient_appointment.py:1002
 msgid "Practitioner {0} does not have a Service Unit set against the Practitioner Schedule {1}."
-msgstr ""
+msgstr "醫師 {0} 在醫師排班 {1} 中未設定服務單位。"
 
 #. Label of the practitioners (Table MultiSelect) field in DocType 'Treatment
 #. Plan Template'
@@ -9596,7 +9596,7 @@ msgstr "處方"
 #. Description of the 'Body Temperature' (Data) field in DocType 'Vital Signs'
 #: healthcare/healthcare/doctype/vital_signs/vital_signs.json
 msgid "Presence of a fever (temp &gt; 38.5 °C/101.3 °F or sustained temp &gt; 38 °C/100.4 °F)"
-msgstr ""
+msgstr "有發燒症狀（體溫 &gt; 38.5 °C/101.3 °F 或持續體溫 &gt; 38 °C/100.4 °F）"
 
 #: healthcare/setup.py:888
 msgid "Preventive"
@@ -9760,7 +9760,7 @@ msgstr "處置"
 #. 'Healthcare Settings'
 #: healthcare/healthcare/doctype/healthcare_settings/healthcare_settings.json
 msgid "Process Service Request If Billing Status Is Paid"
-msgstr ""
+msgstr "若帳單狀態為已付款則處理服務請求"
 
 #: healthcare/healthcare/doctype/inpatient_record/inpatient_record.js:406
 #: healthcare/healthcare/doctype/inpatient_record/inpatient_record.js:557
@@ -9779,7 +9779,7 @@ msgstr "處理病患入院中"
 #. 'Medication'
 #: healthcare/healthcare/doctype/medication/medication.json
 msgid "Properties of the linked Item, you may further configure Batch Number and Expiry, Serial Number, Shelf Life etc. in the Item master"
-msgstr ""
+msgstr "已連結物料的屬性，您可以在物料主檔中進一步設定批號與到期日、序號、儲存期限等"
 
 #: healthcare/setup.py:927
 msgid "Proposal"
