@@ -1101,7 +1101,7 @@ msgstr "預約狀態"
 #: healthcare/healthcare/workspace/healthcare/healthcare.json
 #: healthcare/healthcare/workspace/setup/setup.json
 msgid "Appointment Type"
-msgstr "預約類型"
+msgstr "預約型別"
 
 #. Name of a DocType
 #: healthcare/healthcare/doctype/appointment_type_service_item/appointment_type_service_item.json
@@ -4204,7 +4204,7 @@ msgstr ""
 #: healthcare/healthcare/workspace/healthcare/healthcare.json
 #: healthcare/healthcare/workspace/setup/setup.json
 msgid "Exercise Type"
-msgstr "運動類型"
+msgstr "運動型別"
 
 #. Name of a DocType
 #: healthcare/healthcare/doctype/exercise_type_step/exercise_type_step.json
@@ -4973,7 +4973,7 @@ msgstr ""
 #: healthcare/healthcare/workspace/healthcare/healthcare.json
 #: healthcare/healthcare/workspace/setup/setup.json
 msgid "Healthcare Service Unit Type"
-msgstr "醫療服務單位類型"
+msgstr "醫療服務單位型別"
 
 #: healthcare/healthcare/doctype/healthcare_service_unit_type/healthcare_service_unit_type.py:15
 msgid "Healthcare Service Unit Type cannot have both {0} and {1}"
@@ -7336,7 +7336,7 @@ msgstr ""
 
 #: healthcare/healthcare/api/patient_portal.py:224
 msgid "Not allowed to print this document."
-msgstr "不允許列印此文件。"
+msgstr "不允許列印此檔案。"
 
 #: healthcare/healthcare/doctype/patient_appointment/patient_appointment.py:227
 msgid "Not allowed, cannot overlap appointment {}"
@@ -8503,7 +8503,7 @@ msgstr ""
 #: healthcare/healthcare/doctype/patient_assessment_parameter/patient_assessment_parameter.json
 #: healthcare/healthcare/workspace/setup/setup.json
 msgid "Patient Assessment Parameter"
-msgstr "病患評估參數"
+msgstr "病患評估引數"
 
 #. Name of a DocType
 #: healthcare/healthcare/doctype/patient_assessment_sheet/patient_assessment_sheet.json
@@ -12475,7 +12475,7 @@ msgstr ""
 #: healthcare/healthcare/workspace/healthcare/healthcare.json
 #: healthcare/healthcare/workspace/setup/setup.json
 msgid "Therapy Type"
-msgstr "療程類型"
+msgstr "療程型別"
 
 #. Label of the therapy_types_section (Section Break) field in DocType 'Therapy
 #. Plan Template'
