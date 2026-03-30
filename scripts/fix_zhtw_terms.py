@@ -71,6 +71,9 @@ APP_CONFIGS = [
 ]
 
 PO_FILES = [
+    f"{BENCH_APPS}/frappe/frappe/locale/zh_TW.po",
+    f"{BENCH_APPS}/erpnext/erpnext/locale/zh_TW.po",
+    f"{BENCH_APPS}/hrms/hrms/locale/zh_TW.po",
     f"{BENCH_APPS}/healthcare/healthcare/locale/zh_TW.po",
 ]
 
