@@ -5,9 +5,13 @@ fix_zhtw_terms.py — 修正 zh-TW 翻譯中的大陸用語，替換為台灣繁
 此腳本在 `bench import-translations` 之後執行：
 1. 使用 OpenCC s2twp 將簡體中文 CSV 翻譯轉為台灣繁體
 2. 套用手動 TERM_MAP 修正 OpenCC 未處理的詞彙差異
+3. 從各 app 的 zh.po（簡體）補入 zh-TW CSV 中缺少的項目（避免簡體回落）
 """
 
-import sys
+import csv
+import io
+import os
+import re
 
 try:
     import opencc
@@ -54,11 +58,16 @@ TERM_MAP = [
 
 BENCH_APPS = "/home/frappe/frappe-bench/apps"
 
-CSV_FILES = [
-    f"{BENCH_APPS}/frappe/frappe/translations/zh-TW.csv",
-    f"{BENCH_APPS}/erpnext/erpnext/translations/zh-TW.csv",
-    f"{BENCH_APPS}/hrms/hrms/translations/zh-TW.csv",
-    f"{BENCH_APPS}/healthcare/healthcare/translations/zh-TW.csv",
+# (app_name, zh_po_path, zh_TW_csv_path)
+APP_CONFIGS = [
+    ("frappe",     f"{BENCH_APPS}/frappe/frappe/locale/zh.po",
+                   f"{BENCH_APPS}/frappe/frappe/translations/zh-TW.csv"),
+    ("erpnext",    f"{BENCH_APPS}/erpnext/erpnext/locale/zh.po",
+                   f"{BENCH_APPS}/erpnext/erpnext/translations/zh-TW.csv"),
+    ("hrms",       f"{BENCH_APPS}/hrms/hrms/locale/zh.po",
+                   f"{BENCH_APPS}/hrms/hrms/translations/zh-TW.csv"),
+    ("healthcare", f"{BENCH_APPS}/healthcare/healthcare/locale/zh.po",
+                   f"{BENCH_APPS}/healthcare/healthcare/translations/zh-TW.csv"),
 ]
 
 PO_FILES = [
@@ -74,7 +83,50 @@ def apply_fixes(text: str) -> str:
     return result
 
 
+def parse_po_to_dict(filepath: str) -> dict:
+    """Parse a .po file and return {msgid: msgstr} for non-empty translations."""
+    try:
+        with open(filepath, encoding="utf-8") as f:
+            content = f.read()
+    except FileNotFoundError:
+        return {}
+
+    translations = {}
+    # Match msgid / msgstr pairs (handles multi-line strings)
+    entries = re.split(r'\n(?=msgid )', content)
+    for entry in entries:
+        msgid_match = re.search(r'^msgid\s+"((?:[^"\\]|\\.)*)"', entry, re.MULTILINE)
+        msgstr_match = re.search(r'^msgstr\s+"((?:[^"\\]|\\.)*)"', entry, re.MULTILINE)
+        if not msgid_match or not msgstr_match:
+            continue
+        msgid = msgid_match.group(1).replace('\\"', '"')
+        msgstr = msgstr_match.group(1).replace('\\"', '"')
+        if msgid and msgstr:  # skip empty msgid (header) and empty msgstr
+            translations[msgid] = msgstr
+    return translations
+
+
+def read_csv_sources(filepath: str) -> set:
+    """Return set of source strings already in the zh-TW CSV."""
+    sources = set()
+    try:
+        with open(filepath, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                parts = line.split(",", 1)
+                if parts:
+                    # Remove surrounding quotes if present
+                    src = parts[0].strip().strip('"')
+                    sources.add(src)
+    except FileNotFoundError:
+        pass
+    return sources
+
+
 def fix_csv(filepath: str) -> int:
+    """Fix existing zh-TW CSV entries using OpenCC + TERM_MAP."""
     try:
         with open(filepath, encoding="utf-8") as f:
             lines = f.readlines()
@@ -88,7 +140,7 @@ def fix_csv(filepath: str) -> int:
         if not line.strip():
             new_lines.append(line)
             continue
-        # CSV format: "English source","Translation",
+        # CSV format: source,translation[,context]
         # Only fix the 2nd column (translation)
         parts = line.split(",", 1)
         if len(parts) == 2:
@@ -105,6 +157,47 @@ def fix_csv(filepath: str) -> int:
 
     print(f"  [CSV] Fixed {changed} entries → {filepath}")
     return changed
+
+
+def backfill_from_zh_po(zh_po: str, zhtw_csv: str, app: str) -> int:
+    """
+    Pull entries from zh.po (simplified) that are MISSING from zh-TW CSV,
+    convert them with OpenCC+TERM_MAP, and append to the zh-TW CSV.
+
+    This prevents Frappe's parent-language fallback from leaking simplified
+    Chinese into the zh-TW UI for untranslated strings.
+    """
+    if not os.path.exists(zh_po):
+        print(f"  [SKIP backfill] {zh_po} not found")
+        return 0
+
+    zh_dict = parse_po_to_dict(zh_po)
+    if not zh_dict:
+        return 0
+
+    existing_sources = read_csv_sources(zhtw_csv)
+    added = 0
+
+    new_entries = []
+    for src, zh_trans in zh_dict.items():
+        if src in existing_sources:
+            continue
+        tw_trans = apply_fixes(zh_trans)
+        if tw_trans:
+            # Escape commas in source/translation by quoting
+            src_col = f'"{src}"' if "," in src or '"' in src else src
+            tw_col = f'"{tw_trans}"' if "," in tw_trans or '"' in tw_trans else tw_trans
+            new_entries.append(f"{src_col},{tw_col},\n")
+            added += 1
+
+    if new_entries:
+        # Ensure the CSV file exists (create empty if needed)
+        os.makedirs(os.path.dirname(zhtw_csv), exist_ok=True)
+        with open(zhtw_csv, "a", encoding="utf-8") as f:
+            f.writelines(new_entries)
+
+    print(f"  [BACKFILL] Added {added} missing zh→zh-TW entries for {app}")
+    return added
 
 
 def fix_po(filepath: str) -> int:
@@ -146,11 +239,23 @@ def main():
     mode = "OpenCC s2twp + 手動詞彙" if OPENCC_AVAILABLE else "僅手動詞彙（請安裝 opencc-python-reimplemented）"
     print(f"=== 修正 zh-TW 翻譯：大陸用語 → 台灣繁體用語 [{mode}] ===")
     total = 0
-    for path in CSV_FILES:
-        total += fix_csv(path)
+
+    # Step 1: Fix existing zh-TW CSV entries
+    print("\n--- 步驟1：修正現有 zh-TW CSV 用語 ---")
+    for _app, _zh_po, zhtw_csv in APP_CONFIGS:
+        total += fix_csv(zhtw_csv)
+
+    # Step 2: Backfill missing entries from zh.po (prevents simplified fallback)
+    print("\n--- 步驟2：從 zh.po 補入缺少的 zh-TW 翻譯（避免簡體中文回落） ---")
+    for app, zh_po, zhtw_csv in APP_CONFIGS:
+        total += backfill_from_zh_po(zh_po, zhtw_csv, app)
+
+    # Step 3: Fix .po files
+    print("\n--- 步驟3：修正 .po 檔案 ---")
     for path in PO_FILES:
         total += fix_po(path)
-    print(f"\n完成！共修正 {total} 處用語。")
+
+    print(f"\n完成！共修正/新增 {total} 處用語。")
 
 
 if __name__ == "__main__":
