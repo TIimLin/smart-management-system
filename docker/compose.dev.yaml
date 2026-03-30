@@ -10,19 +10,19 @@ services:
   backend:
     volumes:
       - sites:/home/frappe/frappe-bench/sites
-      - ..:/home/frappe/frappe-bench/apps/smart-management-system
+      - ..:/home/frappe/frappe-bench/apps/healthcare
 
   queue-short:
     volumes:
       - sites:/home/frappe/frappe-bench/sites
-      - ..:/home/frappe/frappe-bench/apps/smart-management-system
+      - ..:/home/frappe/frappe-bench/apps/healthcare
 
   queue-long:
     volumes:
       - sites:/home/frappe/frappe-bench/sites
-      - ..:/home/frappe/frappe-bench/apps/smart-management-system
+      - ..:/home/frappe/frappe-bench/apps/healthcare
 
   scheduler:
     volumes:
       - sites:/home/frappe/frappe-bench/sites
-      - ..:/home/frappe/frappe-bench/apps/smart-management-system
+      - ..:/home/frappe/frappe-bench/apps/healthcare

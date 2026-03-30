@@ -1387,7 +1387,7 @@ msgstr ""
 #: healthcare/healthcare/doctype/vital_signs/vital_signs.json
 #: healthcare/healthcare/page/patient_history/patient_history.js:500
 msgid "BMI"
-msgstr "身體質量指數"
+msgstr "身體品質指數"
 
 #. Label of the barcode (Data) field in DocType 'Clinical Procedure Item'
 #. Label of the barcode (Barcode) field in DocType 'Specimen'

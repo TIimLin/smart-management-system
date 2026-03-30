@@ -8,7 +8,7 @@ COMPOSE_CMD := docker compose \
 	-f docker/compose.dev.yaml \
 	--env-file docker/.env.dev
 
-.PHONY: dev-build dev-up dev-down create-site install-apps import-translations logs restart-backend
+.PHONY: dev-build dev-up dev-down create-site install-apps import-translations fix-zhtw-terms logs restart-backend migrate
 
 ## 第一步：打包本地 Docker image（首次或有 Dockerfile/依賴異動時執行）
 dev-build:
@@ -43,15 +43,22 @@ install-apps:
 
 ## 匯入 zh-TW 繁體中文翻譯（可單獨執行以更新翻譯）
 ## - import-translations：更新後端 CSV 翻譯快取
+## - fix-zhtw-terms：修正大陸用語 → 台灣繁體用語（注銷→登出、質量→品質 等）
 ## - compile-po-to-mo：編譯前端 .po → .mo（重建 image 時會自動執行）
 import-translations:
 	$(COMPOSE_CMD) exec backend bench --site $(SITE) import-translations zh-TW /home/frappe/frappe-bench/apps/frappe/frappe/locale/zh_TW.po
 	$(COMPOSE_CMD) exec backend bench --site $(SITE) import-translations zh-TW /home/frappe/frappe-bench/apps/erpnext/erpnext/locale/zh_TW.po
 	$(COMPOSE_CMD) exec backend bench --site $(SITE) import-translations zh-TW /home/frappe/frappe-bench/apps/hrms/hrms/locale/zh_TW.po
 	$(COMPOSE_CMD) exec backend bench --site $(SITE) import-translations zh-TW /home/frappe/frappe-bench/apps/healthcare/healthcare/locale/zh_TW.po
+	$(MAKE) fix-zhtw-terms
 	$(COMPOSE_CMD) exec backend bench compile-po-to-mo --app healthcare --locale zh_TW
 	$(COMPOSE_CMD) exec backend bench --site $(SITE) execute frappe.db.set_value --args '["Language","zh-TW","enabled",1]'
+	$(COMPOSE_CMD) exec backend bench --site $(SITE) migrate
 	$(COMPOSE_CMD) exec backend bench --site $(SITE) clear-cache
+
+## 修正 zh-TW CSV 翻譯中的大陸用語為台灣繁體用語
+fix-zhtw-terms:
+	$(COMPOSE_CMD) exec backend python3 /home/frappe/frappe-bench/apps/healthcare/scripts/fix_zhtw_terms.py
 
 ## 修改 Python 程式碼後重啟 backend（讓變更生效）
 restart-backend:

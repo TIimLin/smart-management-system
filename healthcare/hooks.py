@@ -7,6 +7,14 @@ app_color = "grey"
 app_email = "info@earthianslive.com"
 app_license = "GNU GPL V3"
 required_apps = ["frappe/erpnext"]
+
+# Fixtures - exported data that gets imported on bench migrate
+fixtures = [
+    {
+        "dt": "Translation",
+        "filters": [["language", "=", "zh-TW"]],
+    }
+]
 app_home = "/desk/healthcare"
 
 add_to_apps_screen = [
