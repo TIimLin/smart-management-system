@@ -42,11 +42,14 @@ install-apps:
 	$(MAKE) import-translations
 
 ## 匯入 zh-TW 繁體中文翻譯（可單獨執行以更新翻譯）
+## - import-translations：更新後端 CSV 翻譯快取
+## - compile-po-to-mo：編譯前端 .po → .mo（重建 image 時會自動執行）
 import-translations:
 	$(COMPOSE_CMD) exec backend bench --site $(SITE) import-translations zh-TW /home/frappe/frappe-bench/apps/frappe/frappe/locale/zh_TW.po
 	$(COMPOSE_CMD) exec backend bench --site $(SITE) import-translations zh-TW /home/frappe/frappe-bench/apps/erpnext/erpnext/locale/zh_TW.po
 	$(COMPOSE_CMD) exec backend bench --site $(SITE) import-translations zh-TW /home/frappe/frappe-bench/apps/hrms/hrms/locale/zh_TW.po
 	$(COMPOSE_CMD) exec backend bench --site $(SITE) import-translations zh-TW /home/frappe/frappe-bench/apps/healthcare/healthcare/locale/zh_TW.po
+	$(COMPOSE_CMD) exec backend bench compile-po-to-mo --app healthcare --locale zh_TW
 
 ## 修改 Python 程式碼後重啟 backend（讓變更生效）
 restart-backend:
