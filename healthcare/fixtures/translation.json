@@ -1506,5 +1506,11 @@
   "name": "zhtw-html-transactions-reports",
   "source_text": "<span class=\"h4\"><b>Transactions &amp; Reports</b></span>",
   "translated_text": "<span class=\"h4\"><b>交易與報表</b></span>"
+ },
+ {
+  "doctype": "Translation",
+  "language": "zh-TW",
+  "source_text": "Outgoing Salary",
+  "translated_text": "離職薪資"
  }
 ]
