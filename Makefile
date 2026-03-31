@@ -8,7 +8,7 @@ COMPOSE_CMD := docker compose \
 	-f docker/compose.dev.yaml \
 	--env-file docker/.env.dev
 
-.PHONY: dev-build dev-up dev-down create-site install-apps import-translations fix-zhtw-terms logs restart-backend migrate
+.PHONY: dev-build dev-up dev-down create-site install-apps import-translations fix-zhtw-terms setup-i18n logs restart-backend migrate
 
 ## 第一步：打包本地 Docker image（首次或有 Dockerfile/依賴異動時執行）
 dev-build:
@@ -59,6 +59,11 @@ import-translations:
 ## 修正 zh-TW CSV 翻譯中的大陸用語為台灣繁體用語
 fix-zhtw-terms:
 	$(COMPOSE_CMD) exec backend python3 /home/frappe/frappe-bench/apps/healthcare/scripts/fix_zhtw_terms.py
+
+## 首次安裝後執行：完整套用繁體中文台灣翻譯（ERPNext + Frappe + HRMS）
+## 包含：套用 5,520 筆 ERPNext 翻譯、修正用語、匯入資料庫、清除快取
+setup-i18n:
+	$(COMPOSE_CMD) exec backend bash /home/frappe/frappe-bench/apps/healthcare/scripts/setup_i18n.sh
 
 ## 修改 Python 程式碼後重啟 backend（讓變更生效）
 restart-backend:

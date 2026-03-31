@@ -81,7 +81,24 @@ docker compose -f docker/compose.yaml -f docker/compose.dev.yaml --env-file dock
   exec backend bench --site dev.localhost install-app healthcare
 ```
 
-**Step 5：開啟瀏覽器**
+**Step 5：套用繁體中文（台灣）翻譯**
+
+> 此步驟將完整套用 ERPNext、Frappe、HRMS 的繁體中文翻譯，約需 20-30 分鐘。
+
+```bash
+make setup-i18n
+```
+
+此指令會自動：
+1. 套用 5,520 筆 ERPNext zh-TW 翻譯
+2. 用 OpenCC 修正所有 app 的簡體中文用語 → 台灣繁體
+3. 匯入翻譯到資料庫
+4. 清除快取
+
+> ℹ️ DB Translation 覆蓋（workspace 標題、模組名稱等 116 筆）已內建於 `healthcare/fixtures/translation.json`，
+> 在 `bench migrate` 時自動匯入，**不需要額外執行**。
+
+**Step 6：開啟瀏覽器**
 
 ```
 http://localhost:8080
