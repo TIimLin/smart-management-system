@@ -1467,5 +1467,44 @@
   "name": "zhtw-accounting-dimension",
   "source_text": "Accounting Dimension",
   "translated_text": "會計維度"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": null,
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh-TW",
+  "modified": "2026-03-31 06:40:07",
+  "name": "zhtw-html-masters-reports",
+  "source_text": "<span class=\"h4\"><b>Masters &amp; Reports</b></span>",
+  "translated_text": "<span class=\"h4\"><b>主資料與報表</b></span>"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": null,
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh-TW",
+  "modified": "2026-03-31 06:40:07",
+  "name": "zhtw-html-reports-masters",
+  "source_text": "<span class=\"h4\"><b>Reports &amp; Masters</b></span>",
+  "translated_text": "<span class=\"h4\"><b>報表與主資料</b></span>"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": null,
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh-TW",
+  "modified": "2026-03-31 06:40:07",
+  "name": "zhtw-html-transactions-reports",
+  "source_text": "<span class=\"h4\"><b>Transactions &amp; Reports</b></span>",
+  "translated_text": "<span class=\"h4\"><b>交易與報表</b></span>"
  }
 ]
