@@ -4,7 +4,7 @@ description: >
   從 REPO.md frontmatter 生成 REPO.json，供靜態網頁 Technology Radar card 展示用。
   Trigger: "匯出 repo json", "生成 repo card 資料", "repo-to-json",
   "建立 repos 的 JSON"。可指定單一 slug 或 --all 掃描全部
-argument-hint: [slug | --all]
+argument-hint: "[slug | --all]"
 layer: 5
 type: conversion
 ---

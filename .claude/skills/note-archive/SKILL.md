@@ -4,7 +4,7 @@ description: >
   Archive a note or domain by moving it to .ai-core/notes/archived/yyMMdd/.
   User-only trigger: "封存筆記", "archive note", "這個不用了", "移到封存".
   Never auto-trigger — requires explicit user action.
-argument-hint: [filepath | keyword]
+argument-hint: "[filepath | keyword]"
 disable-model-invocation: true
 ---
 

@@ -3,7 +3,7 @@ name: repo-code-clear
 description: >
   刪除 .ai-core/repos/{slug}/.cache/code/ 釋放磁碟空間。REPO.md 和 research/ 不受影響。
   Trigger: "清除 repo 代碼", "刪除 clone", "repo-code-clear {slug}", "清空 {repo名} 快取"
-argument-hint: [slug]
+argument-hint: "[slug]"
 disable-model-invocation: true
 layer: 5
 ---

@@ -6,7 +6,7 @@ description: >
   Trigger when user says "mermaid", "轉成圖表", "畫流程圖", "畫架構圖",
   "diagram", "流程圖版", "*.mermaid.md", "sequence diagram",
   or when designing a workflow before implementation.
-argument-hint: [filepath | keyword]
+argument-hint: "[filepath | keyword]"
 disable-model-invocation: false
 ---
 

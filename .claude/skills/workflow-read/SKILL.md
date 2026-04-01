@@ -6,7 +6,7 @@ description: >
   Auto-trigger on "workflow 內容", "看 workflow", "workflow 定義",
   "read workflow", "workflow 協議是什麼", "哪些 agent 在這個 workflow",
   "workflow 執行到哪", "workflow 狀態", "workflow 跑到哪了".
-argument-hint: [task-name] [workflow-name]
+argument-hint: "[task-name] [workflow-name]"
 ---
 
 # Workflow Read

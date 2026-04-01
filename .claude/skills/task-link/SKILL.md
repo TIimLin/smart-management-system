@@ -6,7 +6,7 @@ description: >
   (Obsidian wikilink syntax: [[filename]]) into both TASK.md files for navigation.
   Trigger when user says "任務依賴", "A 要等 B 完成才能做", "task A depends on B",
   "link tasks", "task-link", "建立任務關聯".
-argument-hint: [source-task] [target-task] [direction: blocks|depends-on]
+argument-hint: "[source-task] [target-task] [direction: blocks|depends-on]"
 user-invocable: true
 layer: 2
 type: crud

@@ -9,7 +9,7 @@ description: >
   "agent 狀態總覽", "agent overview", "show agents", "哪些 agent 跑過了",
   "任務進度", "agent 跑到哪了", "可以執行哪個 agent", "下一步跑哪個 agent",
   "phase 完成了嗎", "planning 好了沒".
-argument-hint: [task-name]
+argument-hint: "[task-name]"
 ---
 
 # Agent Sort

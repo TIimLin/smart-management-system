@@ -7,7 +7,7 @@ description: >
   when user asks "任務狀態", "任務進度", "當前增量", "task status", "看一下任務",
   "planning 寫了什麼", "execution 跑到哪", "agent 有沒有跑完",
   or when supervisor needs to validate current task state before proceeding.
-argument-hint: [task-name]
+argument-hint: "[task-name]"
 ---
 
 # Task Read

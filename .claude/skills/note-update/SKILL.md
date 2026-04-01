@@ -4,7 +4,7 @@ description: >
   Update content or frontmatter of an existing note under .ai-core/notes/.
   Use when user says "更新筆記", "修改", "補充", "補全 frontmatter", "fix frontmatter",
   or when a note has missing/incorrect fields. Absorbs note-frontmatter duties.
-argument-hint: [filepath]
+argument-hint: "[filepath]"
 ---
 
 # Note Update

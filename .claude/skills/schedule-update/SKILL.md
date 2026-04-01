@@ -6,7 +6,7 @@ description: >
   Mode content: edit task descriptions or reorder.
   Trigger when user says "推進排程", "完成這個任務", "schedule 下一步",
   "排程寫錯了", "修改排程任務".
-argument-hint: [period-name] [mode: advance|content]
+argument-hint: "[period-name] [mode: advance|content]"
 user-invocable: true
 layer: 2
 type: crud

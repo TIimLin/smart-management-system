@@ -1,7 +1,7 @@
 ---
 name: squash-release
 description: Squash merge all WIP commits from the current branch into main with a comprehensive English commit message. Analyzes actual code diff (not WIP commit messages) to summarize changes. Use when the user says "上版", "squash 合併", "壓縮合併", or wants to consolidate WIP commits into a proper release.
-argument-hint: [override-source-branch]
+argument-hint: "[override-source-branch]"
 disable-model-invocation: true
 ---
 

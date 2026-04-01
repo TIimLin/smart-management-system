@@ -5,7 +5,7 @@ description: >
   .ai-core/schedule/archived/yyMMdd/{period}/. User-only trigger.
   Trigger when user says "封存排程", "archive schedule", "這個 sprint 結束了".
   Never auto-trigger.
-argument-hint: [period-name]
+argument-hint: "[period-name]"
 user-invocable: true
 layer: 2
 type: crud

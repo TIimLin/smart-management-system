@@ -5,7 +5,7 @@ description: >
   （latest_version, latest_released_at, total_releases, default_branch, branches）。
   Trigger: "更新專案", "update project {slug}", "sync project 版本",
   "新增計劃文件", "專案狀態改為 {status}"
-argument-hint: [slug] [--sync-version] [--add-plan <topic>] [--add-research <topic>] [--status <new-status>]
+argument-hint: "[slug] [--sync-version] [--add-plan <topic>] [--add-research <topic>] [--status <new-status>]"
 layer: 2
 type: crud
 ---

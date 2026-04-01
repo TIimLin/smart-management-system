@@ -5,7 +5,7 @@ description: >
   under references/{stem}/note-to-notebooklm/ + auto-collected source files under resources/{stem}/note-to-notebooklm/.
   Trigger when user says "notebooklm", "notebook lm", "準備 notebooklm",
   "轉成 notebooklm", "notebooklm 包", "生成 notebooklm prompt".
-argument-hint: [filepath | keyword] [scope: briefing|report|faq|podcast|summary]
+argument-hint: "[filepath | keyword] [scope: briefing|report|faq|podcast|summary]"
 user-invocable: true
 layer: 5
 type: conversion

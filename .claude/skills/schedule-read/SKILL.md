@@ -5,7 +5,7 @@ description: >
   .ai-core/schedule/{period}/TASKLIST.json with visual progress bar.
   Trigger when user says "看排程", "時程進度", "sprint 狀態", "schedule-read",
   "排程跑到哪", or when checking project timeline.
-argument-hint: [period-name]
+argument-hint: "[period-name]"
 user-invocable: true
 layer: 2
 type: crud

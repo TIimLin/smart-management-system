@@ -5,7 +5,7 @@ description: >
   Creates a SAME-NAME .formula.md file in the SAME directory as the source.
   Trigger when user says "公式化", "轉成 formula", "formula 版", "幫我 formula 化",
   or when a .md note lacks a corresponding .formula.md.
-argument-hint: [filepath | keyword]
+argument-hint: "[filepath | keyword]"
 disable-model-invocation: false
 ---
 

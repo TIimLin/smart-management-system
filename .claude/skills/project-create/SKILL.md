@@ -4,7 +4,7 @@ description: >
   建立新的專案條目（scaffold PROJECT.md + plans/ + research/ + .cache/）。
   Trigger: "新增專案", "建立 project", "開新專案", "create project",
   "記錄構想", "新增 {專案名}"
-argument-hint: [slug-or-name]
+argument-hint: "[slug-or-name]"
 layer: 2
 type: crud
 ---

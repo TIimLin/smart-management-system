@@ -6,7 +6,7 @@ description: >
   (2) explicit: link a specified set of notes together.
   Trigger when user says "找相關筆記並連結", "幫我建立連結", "自動連結",
   "link this note", or after writing a note to build the knowledge graph.
-argument-hint: [filepath] [related-filepath...]
+argument-hint: "[filepath] [related-filepath...]"
 ---
 
 # Note Link

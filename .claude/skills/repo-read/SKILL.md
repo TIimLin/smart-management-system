@@ -4,7 +4,7 @@ description: >
   讀取開源 repo 調研報告與評估結論。
   Trigger: "看 repo", "查 {repo名}", "讀取調研", "read repo", "repo 狀態",
   或 AI 執行前需要了解某 repo 時自動叫用
-argument-hint: [slug-or-name]
+argument-hint: "[slug-or-name]"
 layer: 1
 ---
 

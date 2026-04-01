@@ -3,7 +3,7 @@ name: project-code-link
 description: >
   建立或更新 .ai-core/projects/{slug}/.cache/code symlink 指向 local_path（本機 repo 路徑），讓 AI 可直接讀取本機代碼。
   Trigger: "連結本機 repo", "project-code-link {slug}", "設定 local_path", "讓 AI 讀我的本地代碼 {project}"
-argument-hint: [slug] [local-path]
+argument-hint: "[slug] [local-path]"
 layer: 5
 ---
 

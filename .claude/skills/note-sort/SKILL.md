@@ -8,7 +8,7 @@ description: >
   Trigger on "列出筆記", "知識庫概況", "整理筆記", "相關筆記有哪些",
   "sort notes", "筆記清單", "有沒有相關筆記", or when AI needs to scan
   available knowledge to improve response quality.
-argument-hint: [filter: domain|tag|keyword|quadrant]
+argument-hint: "[filter: domain|tag|keyword|quadrant]"
 ---
 
 # Note Sort

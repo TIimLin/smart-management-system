@@ -6,7 +6,7 @@ description: >
   Core roles: planning (技術規劃公式), execution (程式實作).
   Trigger on "建立 agent", "create agent", "開始規劃", "開始執行",
   "跑一下 planning", "跑一下 execution", or when applying any thinking role to a task.
-argument-hint: [task-name] [role]
+argument-hint: "[task-name] [role]"
 disable-model-invocation: false
 ---
 

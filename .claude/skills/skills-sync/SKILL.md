@@ -5,7 +5,7 @@ description: >
   Overwrites matching skills (src ∩ dst), copies source-only skills (src \ dst),
   preserves target-only skills (dst \ src).
   Trigger when user says "同步 skills", "skills sync", "蓋掉 skills", "更新 skills 目錄".
-argument-hint: [target-skills-path] [source-skills-path]
+argument-hint: "[target-skills-path] [source-skills-path]"
 user-invocable: true
 layer: 5
 type: tool

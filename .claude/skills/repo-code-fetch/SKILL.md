@@ -3,7 +3,7 @@ name: repo-code-fetch
 description: >
   clone 或 pull 最新代碼至 .ai-core/repos/{slug}/.cache/code/，供 AI 深度調研用。
   Trigger: "clone repo", "fetch repo 代碼", "下載 {repo名} 代碼", "repo-code-fetch {slug}", "我想看 {repo} 的源碼"
-argument-hint: [slug]
+argument-hint: "[slug]"
 layer: 5
 ---
 

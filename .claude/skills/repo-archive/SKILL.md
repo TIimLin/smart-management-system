@@ -4,7 +4,7 @@ description: >
   封存 repo 條目至 .ai-core/repos/archived/。
   Archive ≠ Delete：移動目錄，保留所有研究文件（research/, snapshots/, .cache/）。
   Trigger: "封存 repo", "archive repo {slug}", "不再追蹤 {repo名}"
-argument-hint: [slug]
+argument-hint: "[slug]"
 disable-model-invocation: true
 layer: 1
 ---

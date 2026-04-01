@@ -6,7 +6,7 @@ description: >
   (2) content - edit task description, requirements, or tasks list.
   Auto-trigger on "更新任務", "推進增量", "下一個增量", "update task",
   "advance increment", "標記完成", "更新進度", "任務寫錯了".
-argument-hint: [task-name] [mode: advance|content]
+argument-hint: "[task-name] [mode: advance|content]"
 disable-model-invocation: false
 ---
 

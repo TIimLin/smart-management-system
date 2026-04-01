@@ -4,7 +4,7 @@ description: >
   Archive a memory entry by moving it to .ai-core/memory/archived/yyMMdd/.
   Removes the entry from MEMORY.json index.
   User-only trigger: "封存記憶", "archive memory", "這個記憶不用了".
-argument-hint: [filepath | topic-keyword]
+argument-hint: "[filepath | topic-keyword]"
 disable-model-invocation: true
 ---
 

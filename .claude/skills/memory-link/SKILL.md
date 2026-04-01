@@ -5,7 +5,7 @@ description: >
   Note must exist first as the knowledge foundation for full context.
   Auto-trigger after memory-create when related notes or memories exist.
   Trigger when user says "連結到筆記", "記憶之間連結", "這個記憶和XX有關".
-argument-hint: [memory-filepath] [note-or-memory-filepath...]
+argument-hint: "[memory-filepath] [note-or-memory-filepath...]"
 ---
 
 # Memory Link

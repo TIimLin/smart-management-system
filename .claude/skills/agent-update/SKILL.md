@@ -5,7 +5,7 @@ description: >
   Use when refining planning formulas, correcting execution output, or appending
   new stages. Trigger on "更新 agent", "修正 planning", "補充 execution",
   "update agent", "agent 寫錯了", "重寫 agent", "agent 需要調整".
-argument-hint: [task-name] [agent-name]
+argument-hint: "[task-name] [agent-name]"
 disable-model-invocation: false
 ---
 

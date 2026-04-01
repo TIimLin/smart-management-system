@@ -6,7 +6,7 @@ description: >
   same-name mapping. Uses Python pdfplumber for extraction.
   Trigger on "從 PDF 建立筆記", "import PDF", "PDF 轉 md",
   "PDF 匯入", "*.pdf → *.md", "把這個 PDF 整理成筆記".
-argument-hint: [pdf-path] [domain]
+argument-hint: "[pdf-path] [domain]"
 disable-model-invocation: false
 ---
 

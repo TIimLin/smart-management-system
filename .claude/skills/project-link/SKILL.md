@@ -4,7 +4,7 @@ description: >
   建立 project 與其他實體（project/repo/task/schedule）的雙向連結，
   寫入雙方 frontmatter 的 related_* 欄位。
   Trigger: "連結專案", "link project {slug} 到 {target}", "專案關聯 {repo/task}", "project 使用了 {repo}"
-argument-hint: [slug] [target-type] [target-slug]
+argument-hint: "[slug] [target-type] [target-slug]"
 layer: 2
 ---
 

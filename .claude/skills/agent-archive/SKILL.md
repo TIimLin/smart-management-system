@@ -5,7 +5,7 @@ description: >
   to agents/archived/. User-only trigger: "封存 agent", "archive agent",
   "這個 agent 不需要了", "移除 agent", "agent 結束了".
   Never auto-trigger — destructive operation.
-argument-hint: [task-name] [agent-name]
+argument-hint: "[task-name] [agent-name]"
 disable-model-invocation: true
 ---
 

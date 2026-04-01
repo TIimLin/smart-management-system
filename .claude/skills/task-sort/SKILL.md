@@ -5,7 +5,7 @@ description: >
   dependency overview. Shows which tasks are ready (unblocked) vs blocked.
   Trigger when user says "任務排序", "列出所有任務", "哪些任務可以開始",
   "task list", "task-sort", "task 有哪些", "看一下所有任務".
-argument-hint: [sort-by: status|deps|date]
+argument-hint: "[sort-by: status|deps|date]"
 user-invocable: true
 layer: 2
 type: crud

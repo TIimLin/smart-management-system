@@ -4,7 +4,7 @@ description: >
   封存 project 條目至 .ai-core/projects/archived/。
   Archive ≠ Delete：移動目錄，保留所有規劃和研究文件（plans/, research/, .cache/）。
   Trigger: "封存專案", "archive project {slug}", "專案結束", "不再追蹤此專案"
-argument-hint: [slug]
+argument-hint: "[slug]"
 disable-model-invocation: true
 layer: 2
 ---

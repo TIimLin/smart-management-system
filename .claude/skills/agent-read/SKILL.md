@@ -5,7 +5,7 @@ description: >
   .ai-core/tasks/{task-name}/agents/. Auto-trigger on "agent 輸出",
   "planning 寫了什麼", "execution 結果", "read agent", "看一下 planning",
   "看一下 execution", "agent 跑完了嗎", "agent 狀態".
-argument-hint: [task-name] [agent-name]
+argument-hint: "[task-name] [agent-name]"
 ---
 
 # Agent Read

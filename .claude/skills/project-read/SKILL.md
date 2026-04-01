@@ -4,7 +4,7 @@ description: >
   讀取專案狀態、規劃文件、連結的 repos 與 tasks。
   Trigger: "看專案", "查 {project名}", "project 狀態", "read project",
   或 AI 執行前需要了解某 project 時自動叫用
-argument-hint: [slug-or-name]
+argument-hint: "[slug-or-name]"
 layer: 2
 type: crud
 ---

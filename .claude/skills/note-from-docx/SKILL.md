@@ -8,7 +8,7 @@ description: >
   Uses python-docx for .docx; falls back to python-doc2txt / antiword for legacy .doc.
   Trigger on "從 Word 建立筆記", "import Word", "Word 轉 md", "docx 轉 md",
   "Word 匯入", "*.docx → *.md", "把這個 Word 整理成筆記", "word 檔轉筆記".
-argument-hint: [docx-path] [domain]
+argument-hint: "[docx-path] [domain]"
 user-invocable: true
 layer: 5
 type: conversion

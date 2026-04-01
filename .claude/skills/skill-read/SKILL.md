@@ -6,7 +6,7 @@ description: >
   Mode list: dynamic scan of all active skills by layer with trigger summary.
   Trigger when user says "看 skill", "列出所有 skill", "skill-read",
   "有哪些 skill", "這個 skill 怎麼用".
-argument-hint: [skill-name | --list] [--layer=0-5] [--type=crud|role|conversion|contract|tool]
+argument-hint: "[skill-name | --list] [--layer=0-5] [--type=crud|role|conversion|contract|tool]"
 user-invocable: true
 layer: 4
 type: crud

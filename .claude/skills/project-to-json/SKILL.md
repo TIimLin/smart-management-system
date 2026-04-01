@@ -4,7 +4,7 @@ description: >
   從 PROJECT.md frontmatter 生成 PROJECT.json，供靜態網頁 card 展示用。
   Trigger: "匯出 project json", "生成 project card 資料", "project-to-json",
   "建立 projects 的 JSON"。可指定單一 slug 或 --all 掃描全部
-argument-hint: [slug | --all]
+argument-hint: "[slug | --all]"
 layer: 5
 type: conversion
 ---

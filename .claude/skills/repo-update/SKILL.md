@@ -4,7 +4,7 @@ description: >
   更新 repo 評估狀態、新增研究筆記、自動從 GitHub API 或 git 更新
   version 三件組（checked_at, latest_version, latest_released_at, version_lag, default_branch, branches）。
   Trigger: "更新 repo", "update repo {slug}", "sync repo 版本", "新增調研筆記"
-argument-hint: [slug] [--sync-version] [--add-note <topic>] [--status <new-status>]
+argument-hint: "[slug] [--sync-version] [--add-note <topic>] [--status <new-status>]"
 layer: 1
 ---
 

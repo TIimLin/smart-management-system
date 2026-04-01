@@ -3,7 +3,7 @@ name: repo-sort
 description: >
   列出所有 repos 的 Technology Radar 視圖，依 status/category/stars/checked_at 排序。
   Trigger: "列出 repos", "repo 清單", "technology radar", "哪些 repos", "repo-sort", "開源調研清單"
-argument-hint: [--status <status>] [--tag <tag>] [--sort-by <field>]
+argument-hint: "[--status <status>] [--tag <tag>] [--sort-by <field>]"
 layer: 1
 ---
 

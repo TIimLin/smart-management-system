@@ -5,7 +5,7 @@ description: >
   Use when user says "建立筆記", "新增筆記", "記錄下來", "整理成筆記", "匯入筆記",
   "create note", or when capturing knowledge that needs a permanent note.
   Absorbs note-import and note-frontmatter duties for the .ai-core/notes/ structure.
-argument-hint: [domain] [title]
+argument-hint: "[domain] [title]"
 ---
 
 # Note Create

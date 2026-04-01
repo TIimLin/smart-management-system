@@ -5,7 +5,7 @@ description: >
   Scaffolds TASKLIST.json, TASK.md, agents/ and references/ directories.
   Trigger when user says "建立任務", "新增 task", "開始新任務", "create task",
   or when starting a Formula-Contract automation workflow.
-argument-hint: [task-name]
+argument-hint: "[task-name]"
 ---
 
 # Task Create

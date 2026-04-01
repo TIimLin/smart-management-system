@@ -9,7 +9,7 @@ description: >
   "workflow 關聯", "link workflow", "workflow 依賴",
   "A workflow 要等 B", "workflow 串接", "workflow 包含 agent",
   "建立 workflow agent 關係", "workflow-link".
-argument-hint: [task-name] [source] [type: assigns|precedes|composes] [target]
+argument-hint: "[task-name] [source] [type: assigns|precedes|composes] [target]"
 disable-model-invocation: false
 ---
 

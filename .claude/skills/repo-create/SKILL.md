@@ -4,7 +4,7 @@ description: >
   建立新的開源 repo 調研條目（scaffold REPO.md + research/ + snapshots/ + .cache/），
   可選自動 git clone 並依調研骨架生成 research/overview.formula.md。
   Trigger: "調研 repo", "新增開源", "研究 {repo名}", "create repo", "調研 {url}"
-argument-hint: [url-or-slug]
+argument-hint: "[url-or-slug]"
 layer: 1
 ---
 

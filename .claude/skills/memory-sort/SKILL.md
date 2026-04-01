@@ -8,7 +8,7 @@ description: >
   Trigger on "列出記憶", "記憶清單", "sort memory", "整理記憶",
   "記憶時間線", "有哪些記憶", "記憶概況", or when AI needs to survey
   available memories to improve context accuracy.
-argument-hint: [filter: date|topic|tag|quadrant]
+argument-hint: "[filter: date|topic|tag|quadrant]"
 ---
 
 # Memory Sort

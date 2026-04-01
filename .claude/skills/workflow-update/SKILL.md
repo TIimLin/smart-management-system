@@ -5,7 +5,7 @@ description: >
   Warns if the workflow has assigned agents or is in_progress.
   Trigger on "更新 workflow", "修改協作流程", "調整 workflow", "update workflow",
   "workflow 要改", "流程需要調整", "workflow 協議修正", "重定義 pipeline".
-argument-hint: [task-name] [workflow-name]
+argument-hint: "[task-name] [workflow-name]"
 disable-model-invocation: false
 ---
 

@@ -4,7 +4,7 @@ description: >
   Capture key insights from conversation into .ai-core/memory/{yyMMdd}/{hhmmss}-{topic}.md.
   Auto-trigger after significant decisions, discoveries, design discussions, or when user says
   "記住", "記錄下來", "幫我記", "記憶一下". Also updates MEMORY.json index.
-argument-hint: [topic]
+argument-hint: "[topic]"
 ---
 
 # Memory Create

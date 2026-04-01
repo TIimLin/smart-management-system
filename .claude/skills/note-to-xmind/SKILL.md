@@ -7,7 +7,7 @@ description: >
   Formula content is NOT removed — LaTeX is translated to plain-language xmind nodes.
   Best for hierarchical notes. Trigger when user says "心智圖", "xmind",
   "轉成心智圖", "mind map 版", "*.xmind.md", or when note has clear H1/H2/H3.
-argument-hint: [filepath | keyword]
+argument-hint: "[filepath | keyword]"
 user-invocable: true
 layer: 5
 type: conversion

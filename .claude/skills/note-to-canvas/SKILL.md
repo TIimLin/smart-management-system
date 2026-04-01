@@ -6,7 +6,7 @@ description: >
   no LaTeX symbols. Saved as SAME-NAME .html in .ai-core/notes/{domain}/resources/.
   Trigger when user says "canvas", "互動圖", "html 圖", "note-to-canvas",
   "轉成 canvas", "做成互動頁面", "視覺化這個筆記", "報告給主管看", "給團隊看".
-argument-hint: [filepath | keyword]
+argument-hint: "[filepath | keyword]"
 user-invocable: true
 layer: 5
 type: conversion

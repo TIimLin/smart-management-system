@@ -5,7 +5,7 @@ description: >
   .ai-core/tasks/archived/yyMMdd/{task-name}/. Destructive, always confirm
   before moving. Trigger on "封存任務", "完成任務", "archive task",
   "任務結束", "收尾任務", "task done".
-argument-hint: [task-name]
+argument-hint: "[task-name]"
 disable-model-invocation: true
 ---
 

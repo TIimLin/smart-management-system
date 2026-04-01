@@ -6,7 +6,7 @@ description: >
   references/ and scripts/ directories. Validates entity CRUD completeness.
   Trigger when user says "建立新 skill", "新增 skill", "create skill",
   "skill-create", "我要做一個 skill".
-argument-hint: [skill-name] [type: crud|role|conversion|contract|tool]
+argument-hint: "[skill-name] [type: crud|role|conversion|contract|tool]"
 user-invocable: true
 layer: 4
 type: crud

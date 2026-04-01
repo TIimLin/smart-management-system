@@ -5,7 +5,7 @@ description: >
   to workflows/archived/. User-only: "封存 workflow", "archive workflow",
   "這個 workflow 不需要了", "移除 workflow".
   Never auto-trigger — irreversible operation.
-argument-hint: [task-name] [workflow-name]
+argument-hint: "[task-name] [workflow-name]"
 disable-model-invocation: true
 ---
 

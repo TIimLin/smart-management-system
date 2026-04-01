@@ -5,7 +5,7 @@ description: >
   Dynamically scans all existing docs/ subdirectories for project context to
   generate task breakdown. Trigger when user says "建立排程", "規劃時程",
   "新增 sprint", "create schedule", "規劃 {period}", "開始排程規劃".
-argument-hint: [period-name: e.g. 1week, 1month, mvp-phase1]
+argument-hint: "[period-name: e.g. 1week, 1month, mvp-phase1]"
 user-invocable: true
 layer: 2
 type: crud

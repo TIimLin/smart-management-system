@@ -3,7 +3,7 @@ name: project-sort
 description: >
   列出所有 projects，依 status/priority 排序，呈現專案組合概覽（Portfolio View）。
   Trigger: "列出專案", "project 清單", "所有專案", "project-sort", "專案組合", "我有哪些專案"
-argument-hint: [--status <status>] [--tag <tag>] [--sort-by <field>]
+argument-hint: "[--status <status>] [--tag <tag>] [--sort-by <field>]"
 layer: 2
 ---
 

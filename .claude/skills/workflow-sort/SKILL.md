@@ -7,7 +7,7 @@ description: >
   "show workflows", "有哪些 workflow", "workflow 狀態概覽",
   "workflow 有幾個", "整理 workflow".
   Never auto-trigger — pure display, no gate check function.
-argument-hint: [task-name]
+argument-hint: "[task-name]"
 disable-model-invocation: true
 ---
 

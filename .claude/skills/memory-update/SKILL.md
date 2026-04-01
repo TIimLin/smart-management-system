@@ -4,7 +4,7 @@ description: >
   Update content or metadata of an existing memory entry in .ai-core/memory/.
   Use when user says "更新記憶", "修改記憶", "補充那個記憶", or when a memory
   entry has outdated information that needs correction. Always refreshes MEMORY.json index.
-argument-hint: [filepath | topic-keyword]
+argument-hint: "[filepath | topic-keyword]"
 ---
 
 # Memory Update

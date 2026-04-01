@@ -8,7 +8,7 @@ description: >
   Trigger on "planning 要先跑才能 execution", "agent 依賴",
   "建立 agent 關聯", "link agents", "agent 協作圖", "agent 依賴鏈",
   "execution 依賴 planning", "sese 驗證 execution", "agent 串起來".
-argument-hint: [task-name] [src] [type] [dst]
+argument-hint: "[task-name] [src] [type] [dst]"
 disable-model-invocation: false
 ---
 

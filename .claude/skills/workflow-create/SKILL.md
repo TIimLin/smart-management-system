@@ -8,7 +8,7 @@ description: >
   Trigger on "建立 workflow", "create workflow", "定義協作流程",
   "設計 agent 協作", "規劃執行順序", "agent 協作協議", "多 agent 調度",
   "workflow 建立", "orchestrate agents".
-argument-hint: [task-name] [workflow-name] [type: solo|multi-agent]
+argument-hint: "[task-name] [workflow-name] [type: solo|multi-agent]"
 disable-model-invocation: false
 ---
 
