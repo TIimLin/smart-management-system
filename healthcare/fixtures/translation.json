@@ -1508,8 +1508,15 @@
   "translated_text": "<span class=\"h4\"><b>交易與報表</b></span>"
  },
  {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": null,
+  "docstatus": 0,
   "doctype": "Translation",
   "language": "zh-TW",
+  "modified": "2026-03-31 08:08:10",
+  "name": "zhtw-outgoing-salary",
   "source_text": "Outgoing Salary",
   "translated_text": "離職薪資"
  }

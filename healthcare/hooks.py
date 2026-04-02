@@ -13,7 +13,23 @@ fixtures = [
     {
         "dt": "Translation",
         "filters": [["language", "=", "zh-TW"]],
-    }
+    },
+    {
+        "dt": "UOM",
+        "filters": [["uom_name", "in", ["Bottle", "Tube", "Vial"]]],
+    },
+    {
+        "dt": "Company",
+        "filters": [["abbr", "=", "cceye"]],
+    },
+    {
+        "dt": "Warehouse",
+        "filters": [["company", "=", "澄清國際眼科"]],
+    },
+    {
+        "dt": "Item",
+        "filters": [["item_code", "like", "EYE-%"]],
+    },
 ]
 app_home = "/desk/healthcare"
 
